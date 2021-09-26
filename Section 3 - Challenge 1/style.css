@@ -12,8 +12,21 @@ body {
   border: 4px solid black;
   width: 825px;
   margin: 50px auto;
+  position: relative;
 }
 
+.sale {
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  top: -20px;
+  left: -20px;
+  display: inline-block;
+  padding: 7px 15px;
+}
 /* Prodcu title */
 .product-title {
   text-transform: uppercase;
@@ -55,6 +68,36 @@ body {
   text-decoration: none;
 }
 
+.colors div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.colors .red {
+  background-color: red;
+}
+
+.colors .green {
+  background-color: green;
+}
+
+.colors .black {
+  background-color: black;
+}
+
+.colors .orange {
+  background-color: orange;
+}
+.colors .yellow {
+  background-color: yellow;
+}
+
+.colors .blue {
+  background-color: blue;
+}
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
