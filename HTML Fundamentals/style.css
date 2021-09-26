@@ -2,8 +2,10 @@
   /* border-top: 10px solid black; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* main blocks of the page */
 body {
   color: #444;
   font-family: sans-serif;
@@ -12,9 +14,8 @@ body {
   /* the last property will not get inherited */
 }
 
-/* main blocks of the page */
 .container {
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -32,7 +33,7 @@ body {
 
 nav {
   font-size: 18px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 article {
@@ -43,8 +44,12 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  /* Box-sizing added to the universal selector */
+  /* box-sizing: border-box; */
+  /* Removing width as it is now defined in 
+  float at the bottom */
+  /* width: 500px; */
 }
 
 /* smaller elements */
@@ -76,6 +81,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -122,6 +128,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 li:first-child {
@@ -229,3 +236,53 @@ h2::after {
 footer p {
   color: green !important;
 } */
+
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  /* padding-left: 80px; */
+  margin-top: 10px;
+  margin-left: 20px;
+  float: left;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+/* First Solution for Floats */
+/* .clear {
+  clear: both;
+} */
+
+/* Second solution for float  */
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+article {
+  /* background-color: green; */
+  width: 825px;
+  float: left;
+}
+
+aside {
+  /* background-color: indianred; */
+  width: 300px;
+  float: right;
+}
+
+footer {
+  /* background-color: yellow; */
+  clear: both;
+}

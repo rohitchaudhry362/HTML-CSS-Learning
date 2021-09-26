@@ -76,26 +76,26 @@ body {
   margin-right: 5px;
 }
 
-.colors .red {
+.colors .color-red {
   background-color: red;
 }
 
-.colors .green {
+.colors .color-green {
   background-color: green;
 }
 
-.colors .black {
+.colors .color-black {
   background-color: black;
 }
 
-.colors .orange {
+.colors .color-orange {
   background-color: orange;
 }
-.colors .yellow {
+.colors .color-yellow {
   background-color: yellow;
 }
 
-.colors .blue {
+.colors .color-blue {
   background-color: blue;
 }
 .details-title {
