@@ -16,25 +16,35 @@ body {
   position: relative;
 }
 
+.row {
+  justify-content: space-between;
+  display: flex;
+  gap: 40px;
+}
+
 .product-img {
-  float: left;
-  margin-right: 40px;
+  height: auto;
+  /* float: left; */
+  /* margin-right: 40px; */
 }
 
 .product-info {
   /* (container size - container border - 
   image width - size between floated elements)
   = (825 - 8 - 250 - 40) / 2  = 243 */
-  width: 243px;
-  float: left;
-  margin-right: 40px;
+  /* width: 243px; */
+  /* float: left; */
+  /* margin-right: 40px; */
   margin-top: 20px;
+  margin-bottom: 10px;
+  flex: 1;
 }
 
 .product-properties {
-  width: 243px;
-  float: left;
+  /* width: 243px; */
+  /* float: left; */
   margin-top: 20px;
+  flex: 1;
 }
 
 .sale {
@@ -59,10 +69,18 @@ body {
 }
 
 /* product information */
+
+.product-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .price {
   font-size: 20px;
   font-weight: bold;
-  float: left;
+  /* float: left; */
 }
 
 .shipping {
@@ -70,12 +88,12 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
-  float: right;
-  margin-top: 3px;
+  /* float: right; */
+  /* margin-top: 3px; */
 }
 
 .product-details {
-  clear: both;
+  /* clear: both; */
   margin-bottom: 10px;
 }
 
@@ -93,36 +111,40 @@ body {
   text-decoration: none;
 }
 
-.colors div {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+.colors {
+  display: flex;
   margin-top: 20px;
-  margin-right: 5px;
+  gap: 15px;
 }
 
-.colors .color-red {
+.color {
+  height: 25px;
+  width: 25px;
+}
+
+.color-red {
   background-color: red;
 }
 
-.colors .color-green {
+.color-green {
   background-color: green;
 }
 
-.colors .color-black {
+.color-black {
   background-color: black;
 }
 
-.colors .color-orange {
+.color-orange {
   background-color: orange;
 }
-.colors .color-yellow {
+.color-yellow {
   background-color: yellow;
 }
 
-.colors .color-blue {
+.color-blue {
   background-color: blue;
 }
+
 .details-title {
   text-transform: uppercase;
   font-size: 16px;
