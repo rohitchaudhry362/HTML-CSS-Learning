@@ -33,7 +33,9 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  /* Taken from spacing system */
+  /* 80 / 96 / 128 */
+  margin-bottom: 96px;
 }
 
 h2 {
@@ -61,6 +63,7 @@ h2 {
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
+  border-radius: 100px;
 }
 
 .btn:hover,
@@ -77,6 +80,10 @@ h2 {
   font-size: 14px !important;
   padding: 8px 12px !important;
 }
+
+img {
+  border-radius: 12px;
+}
 /* ------------------------ */
 /* COMPONENT STYLES */
 /* ------------------------ */
@@ -86,7 +93,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 48px;
+  margin-top: 64px;
 }
 
 .header-text-box {
@@ -94,7 +101,8 @@ header {
 }
 
 h1 {
-  margin-bottom: 24px;
+  /* 24 / 32 / 48 */
+  margin-bottom: 32px;
   /* / 44 / 52 / 62 / */
   /* Big Fonts for Header */
   font-size: 44px;
@@ -125,7 +133,7 @@ img {
   stroke: #087f5b;
   width: 32px;
   height: 32px;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
 .features-title {
@@ -145,6 +153,7 @@ img {
   background-color: #087f5b;
   color: #fff;
   padding: 24px;
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -165,15 +174,27 @@ img {
   from .feature-text class, because these noth are just regular text */
   font-size: 18px;
   line-height: 1.7;
+  color: #e6fcf5;
+}
+
+.testimonial-author {
+  color: #c3fae8;
 }
 
 /* CHAIRS */
 
 .chair {
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
 }
+
+.chair img {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .chair-box {
-  padding: 24px;
+  padding: 32px;
 }
 
 h3 {
@@ -183,14 +204,14 @@ h3 {
 
 .chair-details {
   list-style: none;
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 .chair-details li {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .chair-details li:last-child {
@@ -206,6 +227,7 @@ h3 {
 .chair-price {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 20px;
 }
 
